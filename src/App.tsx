@@ -12,6 +12,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 import ArtworkAnalysis from "./pages/ArtworkAnalysis";
+import ModelInsights from "./pages/ModelInsights";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -31,6 +32,7 @@ const App = () => (
               <Route element={<ProtectedRoute />}>
                 <Route path="dashboard" element={<Dashboard />} />
                 <Route path="analysis" element={<ArtworkAnalysis />} />
+                <Route path="insights" element={<ModelInsights />} />
               </Route>
               <Route path="*" element={<NotFound />} />
             </Route>
